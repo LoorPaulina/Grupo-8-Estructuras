@@ -215,6 +215,9 @@ public class NuevoController {
                 Juego juegoB=comparaNombre(juego.getNombre(), listaSecundaria);       
                 TDA_ArrayList<String> desarrolladores=juegoB.getDesarrolladores();
                 desarrolladorV.setText(desarrolladores.imprimir());
+
+		Juego juegoB1=comparaNombre(juego.getNombre(), listaJuego);
+                anoLanza.setText(String.valueOf(juegoB1.getFecha()));
                 
                 //categorias      
                 TDA_ArrayList<String> categorias=juegoB.getCategorias();
